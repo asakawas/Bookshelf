@@ -2,6 +2,9 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
+// http経由でコンテンツを読み込むと警告出る
+process.env.ELECTRON_DISABLE_SECURITY_WARNINGS = '1';
+
 const path = require('path');
 const url = require('url');
 
