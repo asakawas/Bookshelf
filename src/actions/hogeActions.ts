@@ -1,9 +1,8 @@
-// import actionCreatorFactory from 'typescript-fsa-reducers';
+import actionCreatorFactory from 'typescript-fsa';
 
-// const actionCreator = actionCreatorFactory();
+const actionCreator = actionCreatorFactory();
 
-// export const hogeActions = {
-//   updateName: actionCreator<string>('ACTION_UPDATE_NAME'),
-//   updateEmail: actionCreator<string>('ACTION_UPDATE_EMAIL'),
-// }
-export{}
+export const hogeActions = {
+  updateName: actionCreator<string>('ACTION_UPDATE_NAME'),
+  updateEmail: actionCreator<string>('ACTION_UPDATE_EMAIL'),
+};

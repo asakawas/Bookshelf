@@ -1,21 +1,20 @@
-// import { reducerWithInitialState } from 'typescript-fsa-reducers';
-// import { hogeActions } from '../actions/hogeActions';
+import { reducerWithInitialState } from 'typescript-fsa-reducers';
+import { hogeActions } from '../actions/hogeActions';
 
-// export interface HogeState{
-//   name: string,
-//   email: string,
-// }
+export interface HogeState{
+  name: string,
+  email: string,
+}
 
-// const initialState: HogeState = {
-//   name: '',
-//   email: '',
-// };
+const initialState: HogeState = {
+  name: '',
+  email: '',
+};
 
-// export const hogeReducer = reducerWithInitialState(initialState)
-//   .case(hogeActions.updateName, (state, name) => {
-//     return Object.assign({}, state, { name });
-//   })
-//   .case(hogeActions.updateEmail, (state, email) => {
-//     return Object.assign({}, state, { email });
-//   });
-export{}
+export const hogeReducer = reducerWithInitialState(initialState)
+  .case(hogeActions.updateName, (state, name) => {
+    return Object.assign({}, state, { name });
+  })
+  .case(hogeActions.updateEmail, (state, email) => {
+    return Object.assign({}, state, { email });
+  });
