@@ -2,8 +2,8 @@ import { reducerWithInitialState } from 'typescript-fsa-reducers';
 import { hogeActions } from '../actions/hogeActions';
 
 export interface HogeState{
-  name: string,
-  email: string,
+  name: string;
+  email: string;
 }
 
 const initialState: HogeState = {
