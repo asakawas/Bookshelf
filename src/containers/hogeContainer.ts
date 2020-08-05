@@ -3,7 +3,6 @@ import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { AppState } from '../store';
 import { hogeActions } from '../actions/hogeActions';
-import { app } from 'electron';
 import { HogeComponent } from '../components/hogeComponent';
 
 export interface HogeActions{
