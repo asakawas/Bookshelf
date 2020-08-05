@@ -10,3 +10,5 @@ const store = createStore(
     hoge: hogeReducer
   })
 );
+
+export default store;
