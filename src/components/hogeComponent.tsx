@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HogeState } from '../states/hogeState';
-import { HogeActions } from '../containers/hogeContainers';
+import { HogeActions } from '../containers/hogeContainer';
 
 interface OwnProps {}
 
