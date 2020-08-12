@@ -3,7 +3,7 @@ import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { AppState } from '../store';
 import { hogeActions } from '../actions/hogeActions';
-import { HogeComponent } from '../components/hogeComponent';
+import { TopComponent } from '../components/topComponent';
 
 export interface HogeActions{
   updateName: (v: string) => Action<string>;
@@ -21,4 +21,4 @@ function mapStateToProps(appState: AppState){
   return Object.assign({}, appState.hoge);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HogeComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(TopComponent);
