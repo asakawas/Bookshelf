@@ -6,17 +6,10 @@ interface OwnProps {}
 
 type HogeProps = OwnProps & HogeState & HogeActions;
 
-export const HogeComponent: React.SFC<HogeProps> = (props: HogeProps) => {
+export const TopComponent: React.SFC<HogeProps> = (props: HogeProps) => {
   return(
     <div>
-      <div className="field">
-        <input
-          type="text"
-          placeholder="name"
-          value={props.name}
-          onChange={(e) => props.updateName(e.target.value)}
-        />
-      </div>
+      <div className="box">Hey! 本棚App</div>
       <div className="field">
         <input
           type="email"
